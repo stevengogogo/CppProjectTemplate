@@ -28,6 +28,8 @@ jobs:
       run: |
         cd ..
         sudo apt-get install build-essential
+        gcc -v
+        make -v
     - name: install CppUnit
       run: |
         cd ..
@@ -50,7 +52,7 @@ jobs:
             do
                 ./$name
         done
-        ./make "build"
+        make "build"
 
     - name: Code coverage using Codecov 
       run: bash <(curl -s https://codecov.io/bash) 
