@@ -27,7 +27,7 @@ jobs:
     - name: install CppUnit
       run: |
         cd ..
-        apt-get install libcppunit-dev
+        sudo apt-get install libcppunit-dev
       
     - name: clean
       run: |
