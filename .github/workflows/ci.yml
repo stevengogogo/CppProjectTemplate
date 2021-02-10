@@ -32,14 +32,12 @@ jobs:
     - name: clean
       run: |
        rm -rf ./build/*
-       ;;
 
     - name: build
       run: |
         cd build 
         cmake ..
         make
-        ;;
 
     - name: Run tests
       run: |
@@ -51,7 +49,6 @@ jobs:
         ;;
         *)  
         ./make "build"
-        ;;
 
     - name: Code coverage using Codecov 
       run: bash <(curl -s https://codecov.io/bash) 
