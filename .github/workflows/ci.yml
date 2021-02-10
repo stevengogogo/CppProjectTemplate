@@ -52,6 +52,7 @@ jobs:
             do
                 ./$name
         done
+        cd ../../
         make "build"
 
     - name: Code coverage using Codecov 
