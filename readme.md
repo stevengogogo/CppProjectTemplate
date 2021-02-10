@@ -2,29 +2,31 @@
 
 ![Ubuntu](https://github.com/stevengogogo/CppProjectTemplate/workflows/Ubuntu/badge.svg) [![codecov](https://codecov.io/gh/stevengogogo/CppProjectTemplate/branch/master/graph/badge.svg?token=k3mzigjsEF)](https://codecov.io/gh/stevengogogo/CppProjectTemplate)
 
-本文介绍了以VS Code编辑器为核心, 用cmake编译, 配合gdb进行调试, cppunit进行单元测试(单元测试在第二篇添加)的大型C++工程最佳实践. (配置环境为WSL, Ubuntu和MacOS)  
-本文所有源码可在[Github](https://github.com/1079805974/CppProjectTemplate)下载.
+本文介紹了以VS Code編輯器為核心, 用cmake編譯, 配合gdb進行調試, cppunit進行單元測試(單元測試在第二篇添加)的大型C++工程最佳實踐. (配置環境為 WSL, Ubuntu和MacOS)
+本文所有源碼可在[Github](https://github.com/1079805974/CppProjectTemplate)下载.
 ## 总工程概览
 ```text
 Project:
 │ 
-├── bin                  可执行文件夹 
-│   └── test             测试文件夹
-├── build                cmake缓存目录 
-├── include              头文件目录
+├── bin                  可執行文件夾 
+│   └── test             測試文件夾
+├── build                cmake緩存目錄
+├── include              頭文件目錄
 │   └── utils.h
-├── make                 bash脚本
+├── make                 bash腳本
 ├── readme.md            本文
-├── src                  源文件目录
+├── src                  原文件目錄
 │   ├── main.cpp     
 │   └── utils.cpp    
-├── test                 单元测试目录
-│   ├── CMakeLists.txt   子目录 CMakeLists
+├── test                 單元測試目錄
+│   ├── CMakeLists.txt   子目錄 CMakeLists
 │   ├── main.cpp
 │   ├── test.h
 │   └── utils_test.cpp
-└── CMakeLists.txt       主目录 CMakeLists
+└── CMakeLists.txt       主目錄 CMakeLists
 ```
+
+---
 
 ## 2020.2.14更新
 感谢几位给我小星星的同学, 让我有动力完善下这个小框架.  
