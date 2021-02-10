@@ -22,7 +22,7 @@ case $1 in
             do
                 ./$name
             done
-  
+        ;;
     *)  
         ./make "build"
     ;;

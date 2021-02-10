@@ -46,7 +46,6 @@ jobs:
             do
                 ./$name
             done
-        ;;
         *)  
         ./make "build"
 
