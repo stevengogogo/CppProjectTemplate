@@ -1,5 +1,7 @@
 # VS Code + Cmake + CppUnit 搭建大型C++工程(一)(单元测试在第二篇添加)
 
+[![codecov](https://codecov.io/gh/stevengogogo/CppProjectTemplate/branch/master/graph/badge.svg?token=k3mzigjsEF)](https://codecov.io/gh/stevengogogo/CppProjectTemplate)
+
 本文介绍了以VS Code编辑器为核心, 用cmake编译, 配合gdb进行调试, cppunit进行单元测试(单元测试在第二篇添加)的大型C++工程最佳实践. (配置环境为WSL, Ubuntu和MacOS)  
 本文所有源码可在[Github](https://github.com/1079805974/CppProjectTemplate)下载.
 ## 总工程概览

@@ -31,3 +31,10 @@ ADD_TEST(NAME utils_test COMMAND "${PROJECT_SOURCE_DIR}/bin/test/utils_test")
 
 set_tests_properties (utils_test
 PROPERTIES FAIL_REGULAR_EXPRESSION "failed") 
+
+
+set_target_properties(utils_test
+    PROPERTIES
+    COMPILE_FLAGS "-ftest-coverage -fprofile-arcs"
+    LINK_FLAGS    "-lgcov --coverage"
+)
