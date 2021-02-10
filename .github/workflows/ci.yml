@@ -45,8 +45,7 @@ jobs:
         for name in `ls`
             do
                 ./$name
-            done
-        *)  
+        done
         ./make "build"
 
     - name: Code coverage using Codecov 
