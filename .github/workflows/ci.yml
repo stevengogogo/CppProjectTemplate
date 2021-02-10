@@ -24,6 +24,10 @@ jobs:
         path: ${{ github.workspace }}/${{ env.INSTALL_LOCATION }}
         key: ${{ runner.os }}-dependencies
 
+    - name: install make
+      run: |
+        cd ..
+        sudo apt-get install build-essential
     - name: install CppUnit
       run: |
         cd ..
